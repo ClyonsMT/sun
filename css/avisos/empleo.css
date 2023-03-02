@@ -1,0 +1,20 @@
+.container_imagen_empleo {
+   display: flex;
+   justify-content: center;
+   pointer-events: none;
+}
+
+.imagen {
+    width: 500px;
+    height: 500px;
+}
+
+/*parte responsiva */
+@media(max-width: 982px) {
+
+    .imagen {
+        width: 80%;
+        height: 80%;
+    }
+
+}

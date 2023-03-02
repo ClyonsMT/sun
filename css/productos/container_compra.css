@@ -1,0 +1,56 @@
+.container_funcion_comprar {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background: rgb(0, 109, 183);
+    background: linear-gradient( 120deg, rgba(0, 109, 183, 1) 0%, rgba(82, 69, 111, 1) 50% );
+    font-size: 23px;
+    color: white;
+}
+
+.texto_invitacion {
+    margin-left: 20px;
+}
+
+.opcion_comprar {
+    position: absolute;
+    right: 0;
+    margin-right: 60px;
+    background: #b1de38;
+    color: #52456f;
+    padding: 20px 35px;
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.opcion_comprar:hover {
+    color: white;
+}
+
+/*parte responsiva */
+@media(max-width: 982px) {
+
+    .container_funcion_comprar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .texto_invitacion {
+        font-size: large;
+        text-align: center;
+    }
+
+    .opcion_comprar {
+        position: static;
+        margin: 0;
+    }
+
+}

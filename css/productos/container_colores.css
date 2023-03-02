@@ -1,0 +1,109 @@
+.container_descripcion_colores {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    background: rgb(93,215,81);
+    background: linear-gradient(90deg, rgba(93,215,81,0.7848389355742297) 0%, rgba(128,150,219,1) 0%, rgba(113,140,217,1) 22%, rgba(181,191,236,1) 89%);
+}
+
+.color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.texto_colores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.item_titulo_colores {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    color: #D8CBB6;
+    background: rgb(45, 42, 53);
+    background: linear-gradient( 120deg, rgba(45, 42, 53, 1) 0%, rgba(82, 69, 111, 1) 50% );
+}
+
+.item_color_titulo {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 6px;
+    color: #D8CBB6;
+}
+
+.item_color_descripcion {
+    font-size: 19px;
+    text-align: justify;
+    line-height: 30px;
+    width: 300px;
+    color: #745428;
+}
+
+.item_color_imagen_azul, .item_color_imagen_rojo, .item_color_imagen_verde, .item_color_imagen_blanco {
+    width: 300px;
+    height: 15px;
+}
+
+/*efecto luz de colores para las imagenes */
+.item_color_imagen_azul {
+    box-shadow: 10px 10px 20px 20px blue;
+}
+
+.item_color_imagen_rojo {
+    box-shadow: 10px 10px 20px 20px red;
+}
+
+.item_color_imagen_verde {
+    box-shadow: 10px 10px 20px 20px greenyellow;
+}
+
+.item_color_imagen_blanco {
+    box-shadow: 10px 10px 20px 20px white;
+}
+
+/*colores */
+.azul {
+    background-color: blue;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
+
+.blanco {
+    background-color: white;
+}
+
+/*Parte responsiva*/
+@media(max-width: 982px) {
+
+    .item_titulo_colores {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .item_color_descripcion {
+        font-size: large;
+    }
+
+    .item_color_imagen_azul, .item_color_imagen_rojo, .item_color_imagen_verde, .item_color_imagen_blanco {
+        width: 200px;
+    }
+
+}

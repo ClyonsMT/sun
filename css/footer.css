@@ -1,0 +1,43 @@
+.pie_pagina {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url('../images/bg.jpg');
+}
+
+.fotos_pie {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.logo_pie_sun {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.derechos {
+    font-size: 14px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.proyecto {
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*parte responsiva*/
+@media(max-width: 982px) {
+
+    .proyecto {
+        font-size: 12px;
+    }
+
+}
