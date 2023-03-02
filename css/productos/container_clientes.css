@@ -51,7 +51,7 @@
 }
 
 /*Enegrecido del texto*/
-strong {
+.frase_cliente strong {
     font-weight: bold;
 }
 
