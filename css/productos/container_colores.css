@@ -24,14 +24,24 @@
 
 .item_titulo_colores {
     display: flex;
+    align-items: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     font-weight: bold;
-    padding: 20px;
+    padding: 10px;
     color: #D8CBB6;
     background: rgb(45, 42, 53);
     background: linear-gradient( 120deg, rgba(45, 42, 53, 1) 0%, rgba(82, 69, 111, 1) 50% );
+}
+
+.luz_titulo_imagen {
+    width: 70px;
+    height: 65px;
+}
+
+.luz_titulo {
+    padding: 20px;
 }
 
 .item_color_titulo {
@@ -96,6 +106,10 @@
     .item_titulo_colores {
         font-size: 20px;
         text-align: center;
+    }
+
+    .luz_titulo {
+        font-size: medium;
     }
 
     .item_color_descripcion {
