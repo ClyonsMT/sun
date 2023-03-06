@@ -52,7 +52,8 @@
 
 /*Enegrecido del texto*/
 .frase_cliente strong {
-    font-weight: bold;
+    color: #724D11;
+    font-weight: bolder;
 }
 
 /*Parte responsiva*/
