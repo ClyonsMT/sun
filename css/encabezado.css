@@ -32,6 +32,8 @@
     position: absolute;
     right: 0;
     margin-right: 40px;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .marcado {

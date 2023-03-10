@@ -14,7 +14,10 @@
         <link rel="stylesheet" href="../reset.css">
         <link rel="stylesheet" href="../css/encabezado.css">
         <link rel="stylesheet" href="../css/avisos/empleo.css">
+        <link rel="stylesheet" href="../css/footer.css">
         <title>Sun Solutions | Empleo</title>
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!--etiquetas para incrustaciones en redes sociales-->
         <meta name="theme-color" content="#19E2A5" />
         <meta content="Sun Solutions - Empleo" property="og:site_name">
@@ -35,8 +38,109 @@
         </nav>
     </header>
     <body>
+        <!--  
         <div class="container_imagen_empleo">
             <img src="../images/avisos/Empleo.png" alt="empleo Sun Solutions" class="imagen">
         </div>
+        -->
+        <div class="container_banner_empleo"></div>
+        <div class="item_titulo_formulario">
+            <img class="imagen_formulario" src="../images/avisos/formulario.jpg" alt="Luz">
+            <p class="formulario_titulo">Rellena el formulario</p>
+        </div>
+        <form class="container_formulario">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@sunsolutions.com" required>
+            </div>
+            <label for="exampleFormControlInput1" class="form-label">País</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Chile</option>
+            </select>
+            <br>
+            <label for="exampleFormControlInput1" class="form-label">Región</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Metropolitana</option>
+            </select>
+            <br>
+            <label for="exampleFormControlInput1" class="form-label">Comuna</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Cerrillos</option>
+                <option value="1">Cerro Navia</option>
+                <option value="2">Conchalí</option>
+                <option value="3">El bosque</option>
+                <option value="4">Estación Central</option>
+                <option value="5">Huechuraba</option>
+                <option value="6">Independencia</option>
+                <option value="7">La Cisterna</option>
+                <option value="8">La Florida</option>
+                <option value="9">La Granja</option>
+                <option value="10">La Pintana</option>
+                <option value="11">La Reina</option>
+                <option value="12">Las Condes</option>
+                <option value="13">Lo Barnechea</option>
+                <option value="14">Lo Espejo</option>
+                <option value="15">Lo Prado</option>
+                <option value="16">Macul</option>
+                <option value="17">Maipú</option>
+                <option value="18">Pedro Aquirre Cerda</option>
+                <option value="19">Peñalolén</option>
+                <option value="20">Provivencia</option>
+                <option value="21">Pudahuel</option>
+                <option value="22">Quilicura</option>
+                <option value="23">Quinta Normal</option>
+                <option value="24">Recoleta</option>
+                <option value="25">Renca</option>
+                <option value="26">San Joaquín</option>
+                <option value="27">San Ramón</option>
+                <option value="28">Santiago</option>
+                <option value="29">Vitacura</option>
+            </select>
+            <br>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ej: Froilán Roa 7107" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Numero celular</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ej: +56 9 95879875" required>
+            </div>
+            <label for="exampleFormControlInput1" class="form-label">Cargo a postular</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Administración de empresas</option>
+                <option value="1">Ingeniero/a en Conectividad y Redes</option>
+                <option value="2">Ingeniero/a en Ciencias de la Computación o Informática</option>
+                <option value="3">Ingeniero/a en Ciencias de datos</option>
+            </select>
+            <br>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Por favor introduzca su curriculum (PDF)</label>
+                <input class="form-control" type="file" id="formFile" required>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">Acepto los <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Terminos y condiciones</a> de Sun Solutions.</label>
+            </div>
+            <br>
+            <button class="boton_enviar" type="submit">Postular</button>
+        </form>
     </body>
+    <footer class="pie_pagina">
+        <div class="fotos_pie">
+            <img src="../images/logo_pie.png" alt="Logo de Sun Solutions" class="logo_pie_sun">
+        </div>
+        <div class="container_derechos">
+            <p class="derechos">&COPY; Sun Solutions 2023 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/validaciones.js"></script>
 </html>

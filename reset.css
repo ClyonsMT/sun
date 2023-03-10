@@ -49,3 +49,6 @@ table {
 html {
 	scroll-behavior: smooth;
 }
+.padding{
+	padding: 0;
+}

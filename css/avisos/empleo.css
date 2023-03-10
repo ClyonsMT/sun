@@ -1,3 +1,4 @@
+/*
 .container_imagen_empleo {
    display: flex;
    justify-content: center;
@@ -10,11 +11,106 @@
 }
 
 /*parte responsiva */
+/*
 @media(max-width: 982px) {
 
     .imagen {
         width: 80%;
         height: 80%;
+    }
+
+}
+*/
+
+
+/*estilos formulario */
+.container_banner_empleo {
+    width: 100%;
+    height: 31vw;
+    display: flex;
+    flex-direction: column;
+    background: url(../../images/avisos/banner_empleo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.item_titulo_formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    color: #D8CBB6;
+    background: rgb(45, 42, 53);
+    background: linear-gradient( 120deg, rgba(45, 42, 53, 1) 0%, rgba(82, 69, 111, 1) 50% );
+    gap: 10px;
+}
+
+.imagen_formulario {
+    width: 70px;
+    height: 65px;
+    border-radius: 500px;
+}
+
+.formulario_titulo {
+    padding: 10px;
+    margin: 0;
+}
+
+.container_formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('../../images/bg2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 10%;
+}
+
+.boton_enviar {
+    width: 20%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.boton_enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+/*parte responsiva */
+@media(max-width: 982px) {
+
+    .container_banner_empleo {
+        background: url(../../images/avisos/banner_empleo_movil.png);
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .boton_enviar {
+        width: 100%;
+    }
+
+    .item_titulo_formulario {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .formulario_titulo {
+        font-size: medium;
     }
 
 }
